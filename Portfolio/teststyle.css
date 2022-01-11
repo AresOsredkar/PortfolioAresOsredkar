@@ -40,12 +40,51 @@ a{
 }
 
 
-.test{
+div{
+    border:black solid 2px;
+}
+.item1{
+    width:60%;
+}
+
+.gridContainer{
+    margin:10px auto;
+    width:80%;
+    display:flex;
+    justify-content:space-evenly;
     font-size:2em;
 }
 
-
-div{
-    border:black solid 2px;
+.gallery{
+    margin:10px;
+    width:40%;
+    display:grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows:10% 10% 10% 10% 10% 10% 10%;
+    grid-template-areas:
+    ". . ."
+    ". img1 ."
+    ". . ."
+    ". img2 ."
+    ". . ."
+    ". img3 ."
+    ". . .";
+    row-gap: 10px;
+    column-gap:10px;
+}
+#item2{
+    grid-area:img1;
+}
+#item3{
+    grid-area:img2;
+}
+#item4{
+    grid-area: img3;
+}
+.img{
+    width:50%;
+}
+.imgCon{
+    overflow:hidden;
 }
 
