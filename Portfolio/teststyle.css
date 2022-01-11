@@ -1,6 +1,9 @@
 body{
     background-color:#70e0c1;
 }
+a{
+    all:unset;
+}
 
 .header{
     background-color:#45ba9a;
@@ -41,64 +44,8 @@ body{
     font-size:2em;
 }
 
-.gridContainer{
-    display: grid;
-    column-gap: 10px;
-    row-gap: 10px;
-    grid-template-columns: 5% 40% 5% 15% 15% 15%;
-    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-    grid-template-areas: 
-        ". . . . . ."
-        ". text . . image1 ."
-        ". text . . . ."
-        ". text . . . ."
-        ". text . . image2 ."
-        ". text . . . ."
-        ". text . . . ."
-        ". text . . image3 ."
-        ". . . . . .";
-}
-.item1{
-    grid-area:text;
-}
-.item2{
-    grid-area:image1;
-    overflow: hidden;
-}
-.item3{
-    grid-area:image2;
-    overflow: hidden;
-}
-.item4{
-    grid-area:image3;
-    overflow: hidden;
-}
-.img{
-    height:100%;
-}
-.img1:hover{
-    grid-column:4,span 3;
-    grid-row:1,span 3;
-    z-index:6;
-    transition: all 2s;
-    
-}
-.img2:hover{
-    grid-column:4,span 3;
-    grid-row:4,span 3;
-    z-index:8;
-    transition: all 2s;
-    
-}
-.img3:hover{
-    grid-column:4,span 3;
-    grid-row:7,span 3;
-    z-index:9;
-    transition: all 2s;
-    
-}
+
 div{
-    
-    order:black solid 2px;
+    border:black solid 2px;
 }
 
