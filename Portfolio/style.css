@@ -10,12 +10,12 @@ body{
     vertical-align: middle;
 }
 
+
 .nav{
     display:flex;
     justify-content:space-evenly;
     vertical-align: middle;
 }
-
 .navBut{
     width:20%;
     height:20px;
