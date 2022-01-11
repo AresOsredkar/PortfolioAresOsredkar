@@ -12,6 +12,10 @@ ul{
     padding:0;
 }
 
+.dropdown:hover .dropdown-menu{
+    display:block;
+    margin-top:0;
+}
 .header{
     background-color:#45ba9a;
     height:20%;
@@ -26,6 +30,12 @@ ul{
     margin:20px;
     padding:10px;
 }
+
+
+
+
+
+
 .nav{
     display:flex;
     justify-content:space-evenly;
@@ -47,7 +57,7 @@ ul{
 }
 
 
-.main{
+.mainPage{
     display:flex;
     width:80%;
     margin:20px auto;
