@@ -38,9 +38,7 @@
     </nav>
 
 
-    <div class="main bio">
-        
-
+    <div class="mainPage bio">
         <div class="textSub" id="biographyText">
             Born 30.04.2000 in Kranj, I've lived all of my life in a smaller town named Tržič, north of the country. 
             <br>My family was never rich, my father worked daily to earn enough to pay the bills. My mother was supposed to stay
@@ -63,17 +61,28 @@
             stage college seemed like a decent idea, since getting a degree is pretty important and any experience would help. Classes filled
             presentations weren't quite my cup of tea but i powered through them and as of now i only have a few months left till I graduate.
         </div>
-        <div class="gallery">
-            <div class="galleryContainer"><img class="galleryItem" src="image/Trzic.jpg">
-                <span class="overlay">Tržič</span>
-                </div>
-            <div class="galleryContainer"><img class="galleryItem" src="image/kranj.jpg">
-                <span class="overlay">Kranj</span>
-                </div>
-            <div class="galleryContainer"><img class="galleryItem" src="image/ljubljana.jpg">
-                <span class="overlay">Ljubljana</span>
-                </div>
-        </div>
+        <div id="carouselControls" class="carousel slide gallery" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="image/Trzic.jpg" class="d-block w-100" alt="Tržič">
+              </div>
+              <div class="carousel-item">
+                <img src="image/kranj.jpg" class="d-block w-100" alt="Kranj">
+              </div>
+              <div class="carousel-item">
+                <img src="image/ljubljana.jpg" class="d-block w-100" alt="Ljubljana">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <!--maybe add a description of picture here if possible-->
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </div>
 
 </div>
