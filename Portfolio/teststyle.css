@@ -1,0 +1,69 @@
+body{
+    background-color:#70e0c1;
+}
+
+
+.header{
+    background-color:#45ba9a;
+    height:20%;
+    display:flex;
+    justify-content:space-evenly;
+    vertical-align: middle;
+}
+.nav{
+    display:flex;
+    justify-content:space-evenly;
+    vertical-align: middle;
+}
+.navBut{
+    width:20%;
+    height:20px;
+    margin:20px;
+    padding:20px;
+    font-size:150%;
+    color:#3e403f;
+}
+.navBut:hover{
+    background-color:#5b6361;
+    color:cyan;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.logo{
+    font-weight:bold;
+    font-family:'Brush Script MT', cursive;
+    font-size: 300%;
+    margin:20px;
+    padding:10px;
+}
+
+
+.gridContainer{
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    grid-template-rows: 13% 13% 13% 13% 13% 13% 13% 13% 13%;
+    grid-template-areas: 
+        ". . . . . ."
+        ". text . . image1 ."
+        ". text . . . ."
+        ". text . . . ."
+        ". text . . image2 ."
+        ". text . . . ."
+        ". text . . . ."
+        ". text . . image3 ."
+        ". . . . . .";
+}
+.item1{
+    grid-area:text;
+}
+.item2{
+    grid-area:image1;
+}
+.item3{
+    grid-area:image2;
+}
+.item4{
+    grid-area:image3;
+}
