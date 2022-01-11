@@ -6,6 +6,4 @@ $(document).ready(function(){
     $(".img").mouseleave(function(){
         $(".img").removeClass("imgAnimation");
     })
-
-
 });
