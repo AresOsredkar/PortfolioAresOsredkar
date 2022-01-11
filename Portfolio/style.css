@@ -1,0 +1,138 @@
+body{
+    background-color:#70e0c1;
+    
+}
+.header{
+    background-color:#45ba9a;
+    height:20%;
+    display:flex;
+    justify-content:space-evenly;
+    vertical-align: middle;
+}
+
+.nav{
+    display:flex;
+    justify-content:space-evenly;
+    vertical-align: middle;
+}
+
+.navBut{
+    width:20%;
+    height:20px;
+    margin:20px;
+    padding:20px;
+    font-size:150%;
+    color:#3e403f;
+}
+.navBut:hover{
+    background-color:#5b6361;
+    color:cyan;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.logo{
+    font-weight:bold;
+    font-family:'Brush Script MT', cursive;
+    font-size: 300%;
+    margin:20px;
+    padding:10px;
+}
+
+.main{
+    display:flex;
+    width:80%;
+    margin:20px auto;
+    justify-content: end;
+    margin:40px auto;
+    opacity: 0;
+}
+.home{justify-content: space-evenly;}
+
+#present{
+    height: 60%;
+    width:50%;
+    margin:auto 10px;
+    font-size:250%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#imageMain{
+    margin:10px;
+    width:20%; 
+    left:0;
+
+    border-radius: 10px;
+}
+.mainOpacity{
+    transition: opacity 2s;
+    opacity: 1;
+}
+
+.textSub{
+    width:60%;
+    text-align: right;
+    font-size:130%;
+    padding:20px;
+    border:#45ba9a solid 3px;
+    border-radius:10px;
+}
+#biographyText{text-align:left;}
+
+.gallery{
+    width:40%;
+    height:80%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    position:relative;
+}
+.galleryContainer{
+    width:50%;
+    margin:5px;
+}
+.galleryItem{
+    width:0;
+    border-radius: 10px;
+    width:100%;
+}
+.overlay{
+    text-align:center;
+    color:cyan;
+    background-color:#3e403f;
+    border-radius:10px;
+    width:100%;
+    margin:10px;
+    padding: 10px;
+}
+
+.contactForm{
+    width:50%;
+    margin:10px auto;
+    font-size:120%;
+}
+#formContainer{margin:0 auto;width:40%;}
+.contactsGeneral{
+    width:50%;
+    padding:10px auto;
+    margin: 10px auto;
+}
+.con{list-style: none;}
+.contactItem{
+    margin:30px;
+    width:70%;
+    font-size:200%;
+    border:#45ba9a 2px solid;
+    border-radius:10px;
+    text-align:center;
+    padding:5px;
+}
+.contactItem:hover{
+    background-color:#5b6361;
+    color:aqua;
+    cursor:pointer;
+    
+}
+
+.thankyou{
+    text-align: center;
+}

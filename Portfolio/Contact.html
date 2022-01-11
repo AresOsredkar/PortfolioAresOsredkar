@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='jquery-3.6.0.js'></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="body">
+    <div class="header">
+        <div class="nav">
+            <div class="navBut" id="home">Home</div>
+            <div class="navBut" id="bio">Biography</div>
+            <div class="navBut" id="school">School</div>
+            <div class="navBut" id="work">Employment</div>
+            <div class="navBut" id="contact">Contact</div>
+        </div>
+        <div class="logo">
+            Ares Osredkar
+        </div>
+    </div>
+
+    <div class="main contact">
+        <div class="contactForm">
+            <div id="formContainer"><form name="Contact" id="form" action="ThankYou.html">
+                <p>Name: </p> 
+                    <input id="nameInput" type="text" placeholder="John" required>
+                    <br>
+                <p>Email: </p>
+                    <input type="email" id="email" placeholder="example@email.com" required>
+                    <br>
+                <p>Phone Number*: </p> 
+                    <input type="tel" id="tel" placeholder="041234567" min="8" max="10">
+                <p>Message:</p> 
+                    <textarea name="message" rows="5" placeholder="Enter message here" required></textarea>
+                    <br>
+                    *not required
+                    <br>
+                <input type="submit" id="send" name="Send" value="SEND">
+            </form></div>
+        </div>
+        <div class="contactsGeneral">
+            <ul class="con">
+                <li class="contactItem" id="facebook">Facebook</li>
+                <li class="contactItem" id="twitter">Twitter</li>
+                <li class="contactItem" id="youtube">Youtube</li>
+                <li class="contactItem" id="twitch">Twitch</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
