@@ -2,7 +2,6 @@ body{
     background-color:#70e0c1;
 }
 
-
 .header{
     background-color:#45ba9a;
     height:20%;
@@ -38,12 +37,16 @@ body{
 }
 
 
+.test{
+    font-size:2em;
+}
+
 .gridContainer{
     display: grid;
     column-gap: 10px;
     row-gap: 10px;
-    grid-template-columns: 15% 15% 15% 15% 15% 15%;
-    grid-template-rows: 13% 13% 13% 13% 13% 13% 13% 13% 13%;
+    grid-template-columns: 5% 40% 5% 15% 15% 15%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     grid-template-areas: 
         ". . . . . ."
         ". text . . image1 ."
@@ -60,10 +63,19 @@ body{
 }
 .item2{
     grid-area:image1;
+    overflow: hidden;
 }
 .item3{
     grid-area:image2;
+    overflow: hidden;
 }
 .item4{
     grid-area:image3;
+    overflow: hidden;
+}
+.img{
+    height:100%;
+}
+div{
+    border:black solid 2px;
 }
