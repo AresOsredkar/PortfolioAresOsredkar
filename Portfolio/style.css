@@ -2,6 +2,8 @@ body{
     background-color:#70e0c1;
     
 }
+
+
 .header{
     background-color:#45ba9a;
     height:20%;
@@ -9,8 +11,6 @@ body{
     justify-content:space-evenly;
     vertical-align: middle;
 }
-
-
 .nav{
     display:flex;
     justify-content:space-evenly;
