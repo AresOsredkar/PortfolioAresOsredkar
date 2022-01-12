@@ -14,7 +14,6 @@
     }
 /*end general*/
 
-
 /*NAVIGATION
     NavBar override formatting*/
     .header{
@@ -38,7 +37,6 @@
         margin-top:0;
     }
 /*END NAVIGATION*/
-
 
 /*text formatting*/
     /*NavBar Logo formatting*/
@@ -77,8 +75,19 @@
         color:cyan;
         border-radius: 10px;
     }
+    /*main page texts*/
+    .textSub{
+        width:60%;
+        text-align: right;
+        font-size:130%;
+        padding:20px;
+        border:#45ba9a solid 3px;
+        border-radius:10px;
+    } 
+    #biographyText{
+        text-align:left;
+    }
 /*end text formatting*/
-
 
 /*CAROUSEL PROPERTIES*/
     .gallery{
@@ -99,92 +108,62 @@
         color:cyan;
         transition: all 1s;
     }
+    .carousel-control{
+        filter:invert(90%) contrast(160%);
+    }
 /*end carousel*/
 
+/*page content formatting*/
+    .mainPage{
+        display:flex;
+        width:80%;
+        margin:20px auto;
+        justify-content: space-evenly;
+        margin:40px auto;
+        opacity: 0;
+    }
+    #imageMain{
+        margin:10px;
+        width:20%; 
+        left:0;
+        border-radius:25px;
+    }
+/*end*/
 
-/**/
-
-.mainPage{
-    display:flex;
-    width:80%;
-    margin:20px auto;
-    justify-content: space-evenly;
-    margin:40px auto;
-    opacity: 0;
-}
-
-
-#imageMain{
-    margin:10px;
-    width:20%; 
-    left:0;
-    border-radius:25px;
-}
+/*animation class*/
 .mainOpacity{
     transition: opacity 2s;
     opacity: 1;
 }
+/*end animations*/
 
-.textSub{
-    width:60%;
-    text-align: right;
-    font-size:130%;
-    padding:20px;
-    border:#45ba9a solid 3px;
-    border-radius:10px;
-}
-#biographyText{text-align:left;}
-
-
-.galleryContainer{
-    width:50%;
-    margin:5px;
-}
-.galleryItem{
-    width:0;
-    border-radius: 10px;
-    width:100%;
-}
-.overlay{
-    text-align:center;
-    color:cyan;
-    background-color:#3e403f;
-    border-radius:10px;
-    width:100%;
-    margin:10px;
-    padding: 10px;
-}
-
-.contactForm{
-    width:50%;
-    margin:10px auto;
-    font-size:120%;
-}
-#formContainer{margin:0 auto;width:40%;}
-.contactsGeneral{
-    width:50%;
-    padding:10px auto;
-    margin: 10px auto;
-}
-.con{list-style: none;}
-.contactItem{
-    margin:30px;
-    width:70%;
-    font-size:200%;
-    border:#45ba9a 2px solid;
-    border-radius:10px;
-    text-align:center;
-    padding:5px;
-}
-.contactItem:hover{
-    background-color:#5b6361;
-    color:aqua;
-    cursor:pointer;
-    
-}
-
-.thankyou{
-    text-align: center;
-}
+/*FORM FORMATTING*/
+    .contactForm{
+        width:50%;
+        margin:10px auto;
+        font-size:120%;
+    }
+    #formContainer{margin:0 auto;width:40%;}
+    .contactsGeneral{
+        width:50%;
+        padding:10px auto;
+        margin: 10px auto;
+    }
+    .con{list-style: none;}
+    .contactItem{
+        margin:30px;
+        width:70%;
+        font-size:200%;
+        border:#45ba9a 2px solid;
+        border-radius:10px;
+        text-align:center;
+        padding:5px;
+    }
+    .contactItem:hover{
+        background-color:#5b6361;
+        color:aqua;
+        cursor:pointer;
+    }
+/*end form*/
 
 
