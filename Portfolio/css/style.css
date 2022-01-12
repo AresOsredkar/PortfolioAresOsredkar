@@ -36,6 +36,25 @@
         display:block;
         margin-top:0;
     }
+    /*changing visuals of navbar*/        
+    .navBut{
+        width:auto;
+        margin:20px;
+        padding:20px;
+        font-size:150%;
+        color:#3e403f;
+    }
+    .navBut:hover{
+        background-color:#5b6361;
+        border-radius: 10px;
+        cursor:pointer;
+    }
+    /*overriding active class for active page*/
+    .navbar-nav .active{
+        background-color:#5b6361;
+        color:cyan;
+        border-radius: 10px;
+    }
 /*END NAVIGATION*/
 
 /*text formatting*/
@@ -54,26 +73,6 @@
         margin:auto 10px;
         font-size:250%;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-    /*changing visuals of navbar*/
-    .navBut{
-        width:auto;
-        margin:20px;
-        padding:20px;
-        font-size:150%;
-        color:#3e403f;
-    }
-    .navBut:hover{
-        background-color:#5b6361;
-        color:cyan;
-        border-radius: 10px;
-        cursor:pointer;
-    }
-    /*overriding active class for active page*/
-    .navbar-nav .active{
-        background-color:#5b6361;
-        color:cyan;
-        border-radius: 10px;
     }
     /*main page texts*/
     .textSub{
