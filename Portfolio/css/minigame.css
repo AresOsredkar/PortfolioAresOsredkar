@@ -1,0 +1,28 @@
+.minigame{
+    height: 70%;   
+    background-color:limegreen;
+    border:black solid 2px;
+    border-radius: 20px; 
+    margin:20px;
+    position:relative;
+}
+
+.snake {
+    height: 55px;
+    width: 55px;
+    background-color: #f00;
+    border-radius: 50%;
+    display: inline-block;
+}
+.snakeAlt{
+    background-color:#0f0;
+}
+.headS{
+    height: 70px;
+    width: 70px;
+}
+.pos{
+    position:relative;
+    top:calc(50% - 35px);
+    left:calc(50% - 35px);
+}
