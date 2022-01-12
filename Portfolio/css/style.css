@@ -12,7 +12,7 @@
         margin:0;
         padding:0;
     }
-
+/*end general*/
 
 
 /*NAVIGATION
@@ -32,7 +32,6 @@
     .dropdown-item:hover{
         width:inherit;
     }
-
     /*hover for drown down*/
     .dropdown:hover .dropdown-menu{
         display:block;
@@ -58,14 +57,7 @@
         font-size:250%;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
-    .nav-link{
-        
-        box-sizing: unset;
-    }
-    .navBut{
-        align-items: center;
-        justify-content: space-around;
-    }
+    /*changing visuals of navbar*/
     .navBut{
         width:auto;
         margin:20px;
@@ -79,27 +71,39 @@
         border-radius: 10px;
         cursor:pointer;
     }
-    .active{
+    /*overriding active class for active page*/
+    .navbar-nav .active{
         background-color:#5b6361;
         color:cyan;
         border-radius: 10px;
     }
-    
+/*end text formatting*/
 
 
-.nav{
-    display:flex;
-    justify-content:space-evenly;
-    vertical-align: middle;
-}
+/*CAROUSEL PROPERTIES*/
+    .gallery{
+        width:40%;
+        height:50%;
+        margin:20px;
+        border-radius:20px;
+        overflow:hidden;
+    }
+    .carousel-item img{
+        width: 30vw;
+        height: 30vw;
+        object-fit: cover; 
+    }
+    .carousel-content{
+        text-align: center;
+        background-color:#5b6361;
+        color:cyan;
+        transition: all 1s;
+    }
+/*end carousel*/
 
-.gallery{
-    width:40%;
-    max-height:80%;
-    margin:20px;
-    border-radius:10px;
-    overflow:hidden;
-}
+
+/**/
+
 .mainPage{
     display:flex;
     width:80%;
