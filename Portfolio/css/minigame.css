@@ -49,6 +49,7 @@
     left:calc(50% - 35px);
 }
 .snake {
+    margin:0;
     visibility:hidden;
     height: 80px;
     width: 80px;
