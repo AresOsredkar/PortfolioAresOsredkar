@@ -1,4 +1,4 @@
-.minigame{
+#minigame{
     height: 70%;   
     background-color:limegreen;
     border:black solid 2px;
@@ -54,9 +54,19 @@
     height: 80px;
     width: 80px;
     background-color: #f00;
+    border:red solid 1px;
     border-radius: 50%;
     display:inline-block;
-    z-index: 9;
+}
+.food {
+    margin:0;
+    visibility:hidden;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border:white solid 1px;
+    border-radius: 50%;
+    display:inline-block;
 }
 .snakeAlt{
     background-color:#0f0;
