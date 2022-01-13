@@ -1,10 +1,11 @@
 #instructions{
-
+    color:red;
 }
 .tile{
-
+    background-color:white;
+    border-radius:5px;
 }
-#TL{
+/*#TL{
 
 }
 #TM{
@@ -29,5 +30,5 @@
 
 }
 #BR{
-
-}
+    
+}*/
