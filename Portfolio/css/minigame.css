@@ -2,7 +2,7 @@
     height: 70%;   
     background-color:limegreen;
     border:black solid 2px;
-    border-radius: 20px; 
+    border-radius: 20px;
     margin:20px;
     position:relative;
     z-index: 8;
@@ -13,14 +13,45 @@
     left:0;
     color:red;
 }
+
+#start{
+    border-radius: 5px;
+    background-color:beige;
+    width:150px;
+    font-size:1.3em;
+    padding: 10px;
+    position:relative;
+    top:50%;
+    left:calc(50% - 75px);
+}
+#start:hover{
+    background-color:cornflowerblue;
+    cursor:pointer;
+}
+#restart{
+    position:relative;
+    top: -40px;
+    left: 0;
+    border-radius: 10px;
+    background-color:beige;
+    width:100px;
+    padding: 5px;
+    transition: all 1s;
+}
+#restart:hover{
+    background-color:cornflowerblue;
+    cursor:pointer;
+}
+
 .pos{
     position:relative;
     top:calc(50% - 35px);
     left:calc(50% - 35px);
 }
 .snake {
-    height: 55px;
-    width: 55px;
+    visibility:hidden;
+    height: 80px;
+    width: 80px;
     background-color: #f00;
     border-radius: 50%;
     display:inline-block;
@@ -29,7 +60,4 @@
 .snakeAlt{
     background-color:#0f0;
 }
-.headS{
-    height: 70px;
-    width: 70px;
-}
+
