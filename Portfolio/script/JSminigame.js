@@ -1,6 +1,7 @@
 $(document).ready(function(){
     var activeWindow = false;
     $("#start").on("click",function(){
+        $("#start").off("click");
         Food();
         activeWindow = true;
         $("#start").on("click");
@@ -9,20 +10,22 @@ $(document).ready(function(){
         $("#start").attr("id","restart");
         $(".blob").css({"visibility":"visible"});
         $(".blob").css({"transition":"all 7s linear"});
-        $("#restart").attr("onClick","Restart()");
+        
         $("#restart").text("Restart");
+        
         var Pos = { x: $("#minigame").width()/2 - 40 , y:$("#minigame").height() / 2 - 40}
         $(".blob").css({"top":Pos.y + "px","left":Pos.x + "px"});
         return false;
     });
-
+    
     $("#minigame").on("mousemove",function(event){
-        if(activeWindow){
+        var mPos = { x: event.pageX,y:event.pageY }
 
-        }
         return false;
     });
-
+    $("#restart").click(function(){
+        if(activeWindow){
+            Restart()}});
 
     function Food(){
         console.log("yes");
@@ -37,6 +40,9 @@ $(document).ready(function(){
             console.log(i + " " + span);
         }
         return false; 
+    }
+    function Restart(){
+        window.location.href = "JSMinigame.html";
     }
 });
 
