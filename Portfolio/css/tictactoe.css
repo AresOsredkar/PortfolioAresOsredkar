@@ -1,6 +1,7 @@
 #tictactoe{
     width:50%;
     margin:20px auto;
+    text-align: center;
 }
 h1{
     width:40%;
@@ -92,6 +93,21 @@ h1{
     background-color:gold;
     color:black;
 }
+#tttRestart{
+    
+    width:30%;
+    margin: 40px auto;
+    padding: 10px;
+    background-color:darkmagenta;
+    color:black;
+    border-radius: 10px;
+}
+#tttRestart:hover{
+    background-color:darkorchid;
+    cursor:pointer;
+}
+
+
 
 #TL{
     grid-area: TL;
