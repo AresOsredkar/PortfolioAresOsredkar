@@ -1,34 +1,122 @@
+#tictactoe{
+    width:50%;
+    margin:20px auto;
+}
+h1{
+    width:40%;
+    margin:0 auto;
+}
+
 #instructions{
     color:red;
+    width:40%;
+    margin:0 auto;
 }
-.tile{
-    background-color:white;
-    border-radius:5px;
+#turn{
+    color:red;
+    background-color: limegreen;
+    border-radius:10px;
+    width:30%;
+    text-align: center;
+    margin:10px auto;
 }
-/*#TL{
+#board{
+    width:40%;
+    margin:0 auto;
+    display:grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 120px 120px 120px;
+    grid-template-areas: 
+    "TL TM TR"
+    "ML MM MR"
+    "BL BM BR";
+    justify-items:center;
+    border:black 2px solid;
+    align-items:center;;
+}
 
+.tile{
+    width:100px;
+    height:100px;
+    background-color:white;
+    border-radius:5px; 
+    user-select:none;
+    text-align: center;
+    align-items: center;
+    font-size:3em;
+}
+.tile:hover{
+    background-color:beige;
+    box-shadow:2px 2px 5px #000 ;
+    cursor:pointer;
+}
+.tile:active{
+    background-color:darkgray;
+    box-shadow:3px 3px 5px #fff ;
+}
+
+.choosenX{
+    background-color:indianred;
+    color:lime;
+}
+.choosenX:hover{
+    background-color:indianred;
+    color:lime;
+    box-shadow:0px 0px 0px #000 ;
+    cursor:auto;
+}
+.choosenO{
+    background-color:darkolivegreen;
+    color:darkred;
+}
+.choosenO:hover{
+    background-color:darkolivegreen;
+    color:darkred;
+    box-shadow:0px 0px 0px #000 ;
+    cursor:auto;
+}
+
+.victoryFont{
+    font-size:1.5em;
+    color:RED;
+    font-weight:bolder;
+    transition:all 1s;
+}
+.victoryTile{
+    background-color:gold;
+    color:black;
+}
+.victoryTile:hover{
+    background-color:gold;
+    color:black;
+}
+
+#TL{
+    grid-area: TL;
 }
 #TM{
-
+    grid-area: TM;
 }
 #TR{
-
+    grid-area: TR;
 }
 #ML{
-
+    grid-area: ML;
 }
 #MM{
-
+    grid-area: MM;
 }
 #MR{
-
+    grid-area: MR;
 }
 #BL{
-
+    grid-area: BL;
 }
 #BM{
-
+    grid-area: BM;
 }
 #BR{
-    
-}*/
+    grid-area: BR;
+}
