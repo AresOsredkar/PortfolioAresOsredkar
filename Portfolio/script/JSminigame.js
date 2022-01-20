@@ -21,17 +21,21 @@ $(document).ready(function(){
             y: event.clientY 
         }
         var actualPos = {
-            x: mousePos.x - $("#minigame").offset().left - 40,
-            y: mousePos.y - $("#minigame").offset().top - 80
+            x: mousePos.x - $("#minigame").offset().left - $(".blob").width(),
+            y: mousePos.y - $("#minigame").offset().top - $(".blob").height()
         }
         $(".blob").css({"top":actualPos.y,"left":actualPos.x});
-        if(event.clientX>100){
-            PickUp();
-        }
+        
+        CheckOverLap();
+        
         return false;
     });
 
 
+    function CheckOverLap(){
+
+        return false;
+    }
     function PickUp(){
         var size = { w: $(".blob").width(), h: $(".blob").height()};
         $(".blob").css({"height": size.h + 10 + "px", "width": size.h + 10 + "px"});
@@ -46,7 +50,7 @@ $(document).ready(function(){
         var heigh = $("#minigame").height()-40;
         for(let i = 0; i<10;i++)
         {     
-            eSpan = i + "' style=' top:" + Math.floor(Math.random() * heigh) + "px; left:" + Math.floor(Math.random() * widt) + "px'>O</span";
+            eSpan = i + "' style=' top:" + Math.floor(Math.random() * heigh) + "px; left:" + Math.floor(Math.random() * widt) + "px'></span";
             var span = "<" + sSpan + eSpan + ">";
             $("#minigame").append(span);
             console.log(i + " " + span);
