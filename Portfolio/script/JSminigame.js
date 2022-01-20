@@ -25,9 +25,18 @@ $(document).ready(function(){
             y: mousePos.y - $("#minigame").offset().top - 80
         }
         $(".blob").css({"top":actualPos.y,"left":actualPos.x});
+        if(event.clientX>100){
+            PickUp();
+        }
         return false;
     });
 
+
+    function PickUp(){
+        var size = { w: $(".blob").width(), h: $(".blob").height()};
+        $(".blob").css({"height": size.h + 10 + "px", "width": size.h + 10 + "px"});
+        return false;
+    }
 
     function Food(){
         console.log("yes");
