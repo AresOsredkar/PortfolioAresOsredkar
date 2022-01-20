@@ -24,7 +24,7 @@ $(document).ready(function(){
             x: mousePos.x - $("#minigame").offset().left - $(".blob").width(),
             y: mousePos.y - $("#minigame").offset().top - $(".blob").height()
         }
-        $(".blob").css({"top":actualPos.y,"left":actualPos.x});
+        $(".blob").css({"top":actualPos.y + "px","left":actualPos.x + "px"});
         
         CheckOverLap();
         
