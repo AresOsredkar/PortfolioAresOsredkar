@@ -62,7 +62,12 @@ $(document).ready(function(){
 
     function PickUp(){
         var size = { w: $(".blob").width(), h: $(".blob").height()};
-        $(".blob").css({"height": size.h + 13 + "px", "width": size.h + 13 + "px"});
+        if(size.w < 500){
+            $(".blob").css({"height": size.h + 13 + "px", "width": size.h + 13 + "px"});
+        }
+        else{
+            EndGame();
+        }
         return false;
     }
     function PickUpT(){
@@ -71,6 +76,14 @@ $(document).ready(function(){
             $(".blob").css({"height": size.h - 15 + "px", "width": size.h - 15 + "px"});
         }
         return false;
+    }
+
+    function EndGame(){
+        $(".blob").css("display","none");
+        $(".food").css("display","none");
+        $(".trap").css("display","none");
+        $(".gameEnd").css("display","block");
+        $(document).off("mousemove");
     }
 
     function Food(cnt){
