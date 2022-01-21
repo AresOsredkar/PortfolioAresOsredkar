@@ -1,8 +1,10 @@
 $(document).ready(function(){
     var activeWindow = false;
+    var score = 0;
     console.log( $(window).innerHeight() + " "+ $(window).innerWidth());
     Food(15);
     Trap(5);
+    Death(5);
     activeWindow = true;
     //setup
     $(".game").attr("active","true");      
@@ -22,7 +24,7 @@ $(document).ready(function(){
         
         $(".blob").css({"top":actualPos.y + "px","left":actualPos.x + "px"});
         CheckOverLap();
-        
+        $(".score").text(score);
         return false;
     });
     $(document).on("keyup",function(event){
@@ -57,13 +59,23 @@ $(document).ready(function(){
                 trap.remove();
             }
         });
+        $(".death").each(function(){
+            var death = $(this);
+            if(!(blob.offset().top > death.offset().top + death.height() ||
+                blob.offset().left + blob.width() < death.offset().left ||
+                blob.offset().top + blob.height() < death.offset().top ||
+                blob.offset().left > death.offset().left + death.width()))
+            {
+                EndGame();
+            }
+        });
         return false;
     }
 
     function PickUp(){
         var size = { w: $(".blob").width(), h: $(".blob").height()};
         if(size.w < 500){
-            $(".blob").css({"height": size.h + 13 + "px", "width": size.h + 13 + "px"});
+            score = score + 5;
         }
         else{
             EndGame();
@@ -72,8 +84,11 @@ $(document).ready(function(){
     }
     function PickUpT(){
         var size = { w: $(".blob").width(), h: $(".blob").height()};
-        if(size.w > 20){
-            $(".blob").css({"height": size.h - 15 + "px", "width": size.h - 15 + "px"});
+        if(score>0){
+            score = score + -7;
+        }
+        else{
+            EndGame();
         }
         return false;
     }
@@ -82,6 +97,7 @@ $(document).ready(function(){
         $(".blob").css("display","none");
         $(".food").css("display","none");
         $(".trap").css("display","none");
+        $(".death").css("display","none");
         $(".gameEnd").css("display","block");
         $(document).off("mousemove");
     }
@@ -103,6 +119,21 @@ $(document).ready(function(){
     }
     function Trap(cnt){
         var sSpan = "span class='trap'";
+        var eSpan = "";
+        var widt = $(document).innerWidth() - 100 ;
+        var heigh = $(document).innerHeight() - 100;
+        var maxH = widt - $(".game").height();
+        var maxW = heigh - $(".game").width();
+        for(let i = 0; i<cnt;i++)
+        {     
+            eSpan = i + "' style=' top:" + Math.floor(Math.random() * heigh) + "px; left:" + Math.floor(Math.random() * widt) + "px'></span";
+            var span = "<" + sSpan + eSpan + ">";
+            $(".game").append(span);
+        }
+        return false; 
+    }
+    function Death(cnt){
+        var sSpan = "span class='death'";
         var eSpan = "";
         var widt = $(document).innerWidth() - 100 ;
         var heigh = $(document).innerHeight() - 100;

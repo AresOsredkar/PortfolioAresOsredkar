@@ -38,11 +38,20 @@ body{
     margin:20px auto;
     background:beige;
     border-radius:20px;
+    text-align:center;
+    width:40%;
 }
 .gameEnd:hover{
     background-color:black;
     color:white;
     cursor:pointer;
+}
+.score{
+    text-align:right;
+    margin:20px;
+    padding:20px;
+    position:absolute;
+    font-weight: bold;
 }
 
 .blob {
@@ -77,6 +86,17 @@ body{
     height: 40px;
     width: 40px;
     background-color: yellow;
+    border-radius: 50%;
+    display:inline-block;
+    z-index:11;
+}
+.death{
+    position:absolute;
+    margin:0;
+    visibility:visible;
+    height: 50px;
+    width: 50px;
+    background-color: purple;
     border-radius: 50%;
     display:inline-block;
     z-index:11;
