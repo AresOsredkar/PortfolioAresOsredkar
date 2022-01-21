@@ -1,28 +1,22 @@
 $(document).ready(function(){
     var activeWindow = false;
-    $("#start").on("click",function(){
-        Food();
-        activeWindow = true;
-        $("#start").on("click");
-        //setup
-        $("#minigame").attr("active","true");
-        $("#start").attr("id","restart");
-        $(".blob").css({"visibility":"visible"});
-        $("#restart").attr("onClick","Restart()");
-        $("#restart").text("Restart");
-        var Pos = { x: $("#minigame").width()/2 - 40 , y:$("#minigame").height() / 2 - 40}
-        $(".blob").css({"top":Pos.y + "px","left":Pos.x + "px"});
-        return false;
-    });
+    console.log( $(window).innerHeight() + " "+ $(window).innerWidth());
+    Food();
+    activeWindow = true;
+    //setup
+    $(".body").attr("active","true");      
+    $(".blob").css({"visibility":"visible"});
+    var Pos = { x: $(".body").width()/2 - 40 , y:$(".body").height() / 2 - 40}
+    $(".blob").css({"top":Pos.y + "px","left":Pos.x + "px"});
 
-    $("#minigame").on("mousemove",function(event){
+    $(".body").on("mousemove",function(event){
         var mousePos = { 
             x: event.clientX,
             y: event.clientY 
         }
         var actualPos = {
-            x: mousePos.x - $("#minigame").offset().left - $(".blob").width(),
-            y: mousePos.y - $("#minigame").offset().top - $(".blob").height()
+            x: mousePos.x - $(".body").offset().left - ($(".blob").width()/2),
+            y: mousePos.y - $(".body").offset().top - ($(".blob").height()/2)
         }
         $(".blob").css({"top":actualPos.y,"left":actualPos.x});
         $(".blob").css({"top":actualPos.y + "px","left":actualPos.x + "px"});
@@ -31,7 +25,11 @@ $(document).ready(function(){
         
         return false;
     });
-
+    $(document).on("keyup",function(event){
+        if(event.key == "Escape"){
+            window.location = "JSMinigame.html";
+        }
+    });
 
     function CheckOverLap(){
         
@@ -47,13 +45,13 @@ $(document).ready(function(){
         console.log("yes");
         var sSpan = "span class='food' id='span";
         var eSpan = "";
-        var widt = $("#minigame").width()-40;
-        var heigh = $("#minigame").height()-40;
+        var widt = $(window).innerWidth() - 100;
+        var heigh = $(window).innerHeight() - 100
         for(let i = 0; i<10;i++)
         {     
             eSpan = i + "' style=' top:" + Math.floor(Math.random() * heigh) + "px; left:" + Math.floor(Math.random() * widt) + "px'></span";
             var span = "<" + sSpan + eSpan + ">";
-            $("#minigame").append(span);
+            $(".body").append(span);
             console.log(i + " " + span);
         }
         return false; 
