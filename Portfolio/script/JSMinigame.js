@@ -4,19 +4,19 @@ $(document).ready(function(){
     Food();
     activeWindow = true;
     //setup
-    $(".body").attr("active","true");      
+    $(".game").attr("active","true");      
     $(".blob").css({"visibility":"visible"});
-    var Pos = { x: $(".body").width()/2 - 40 , y:$(".body").height() / 2 - 40}
+    var Pos = { x: $(document).width()/2 - 40 , y:$(document).height() / 2 - 40}
     $(".blob").css({"top":Pos.y + "px","left":Pos.x + "px"});
 
-    $(".body").on("mousemove",function(event){
+    $(document).on("mousemove",function(event){
         var mousePos = { 
             x: event.clientX,
             y: event.clientY 
         }
         var actualPos = {
-            x: mousePos.x - $(".body").offset().left - ($(".blob").width()/2),
-            y: mousePos.y - $(".body").offset().top - ($(".blob").height()/2)
+            x: mousePos.x - ($(".blob").width()/2),
+            y: mousePos.y - ($(".blob").height()/2)
         }
         $(".blob").css({"top":actualPos.y,"left":actualPos.x});
         $(".blob").css({"top":actualPos.y + "px","left":actualPos.x + "px"});
@@ -45,13 +45,15 @@ $(document).ready(function(){
         console.log("yes");
         var sSpan = "span class='food' id='span";
         var eSpan = "";
-        var widt = $(window).innerWidth() - 100;
-        var heigh = $(window).innerHeight() - 100
+        var widt = $(document).innerWidth() - 100 ;
+        var heigh = $(document).innerHeight() - 100;
+        var maxH = widt - $(".game").height();
+        var maxW = heigh - $(".game").width();
         for(let i = 0; i<10;i++)
         {     
             eSpan = i + "' style=' top:" + Math.floor(Math.random() * heigh) + "px; left:" + Math.floor(Math.random() * widt) + "px'></span";
             var span = "<" + sSpan + eSpan + ">";
-            $(".body").append(span);
+            $(".game").append(span);
             console.log(i + " " + span);
         }
         return false; 
