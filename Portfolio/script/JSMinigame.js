@@ -19,9 +19,8 @@ $(document).ready(function(){
             x: mousePos.x - ($(".blob").width()/2),
             y: mousePos.y - ($(".blob").height()/2)
         }
-        $(".blob").css({"top":actualPos.y,"left":actualPos.x});
-        $(".blob").css({"top":actualPos.y + "px","left":actualPos.x + "px"});
         
+        $(".blob").css({"top":actualPos.y + "px","left":actualPos.x + "px"});
         CheckOverLap();
         
         return false;
@@ -71,7 +70,6 @@ $(document).ready(function(){
         if(size.w > 20){
             $(".blob").css({"height": size.h - 15 + "px", "width": size.h - 15 + "px"});
         }
-        
         return false;
     }
 
