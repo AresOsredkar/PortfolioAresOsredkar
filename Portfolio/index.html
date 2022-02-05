@@ -14,39 +14,14 @@
 
 <div class="body">
 
-    <!--navigation bar-->
-    <nav class="navbar navbar-expand-lg navbar-light header">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item navBut active"><a href="index.html" class="nav-link" id="home">Home</a></li>
-                    <li class="nav-item dropdown navBut">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownContact" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Biography
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownContact">
-                            <li><a class="dropdown-item" href="Biography.html">General</a></li>
-                            <li><a class="dropdown-item" href="School.html">School</a></li>
-                            <li><a class="dropdown-item" href="Employment.html">Employment</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item navBut"><a href="Contact.html" class="nav-link" id="contact">Contact</a></li>
-                    <li class="nav-item dropdown navBut">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownContact" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Testing Pages
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropDownTest">
-                            <li><a class="dropdown-item" href="TestSite.html">Bootstrap Testing</a></li>
-                            <li><a class="dropdown-item" href="JSMinigame.html">JS Minigame</a></li>
-                            <li><a class="dropdown-item" href="TicTacToe.html">TicTacToe</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <a class="navbar-brand logo" href="#">Ares Osredkar</a>
-        </div>
-    </nav>
+        <!--navigation bar-->
+        <div id="navPlaceholder">
 
+        </div>
+        <script>
+            $("#navPlaceholder").load("navbar.html");       
+        </script>
+    
     <!--main part of the page-->
     <div class="mainPage home">
         <div id="present">
