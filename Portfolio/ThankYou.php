@@ -7,32 +7,37 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/tictactoe.css">
         <script src="script/script.js"></script>
-        <script src="script/tictactoe.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 <body>
 
 <div class="body">
 
-        <!--navigation bar-->
-        <div id="navPlaceholder">
+       <!--navigation bar-->
+       <div id="navPlaceholder">
 
-        </div>
-        <script>
-            $("#navPlaceholder").load("navbar.html");       
-        </script>
-    
-
-    <div id="sqlForm" active="false">
-        <form>
-            <label>Znamka</label><input type="text" id="znamka"><br>
-            <label>Letnica</label><input type="number" id="leto" min="1900" max="2022"><br>
-            <label>Doseg</label><input type="number" id="doseg"><br>
-            <label>Ocena</label><input type="range" id="ocena" min="0" max="5" step="1"><br>
-        </form>
     </div>
+    <script>
+        $("#navPlaceholder").load("navbar.html");       
+    </script>
+
+    <div class="mainPage thank you">
+        <div class="thankyou textSub">
+                Thank you for sending me a message, <br>
+                I will try to respond as quickly as possible.
+            <button name="back" onClick="window.location.href = 'index.html';">RETURN HOME</button>
+        </div>
+        <div class="contactsGeneral">
+            <ul class="con">
+                <li class="contactItem" id="facebook">Facebook</li>
+                <li class="contactItem" id="twitter">Twitter</li>
+                <li class="contactItem" id="youtube">Youtube</li>
+                <li class="contactItem" id="twitch">Twitch</li>
+            </ul>
+        </div>
+    </div>
+
 </div>
 </body>
 </html>

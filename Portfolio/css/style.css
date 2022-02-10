@@ -174,4 +174,8 @@
     }
 /*end form*/
 
-
+#sqlForm{
+    width:80%;
+    justify-content: center;
+    margin:20px auto;
+}
