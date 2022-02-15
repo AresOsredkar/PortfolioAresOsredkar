@@ -18,9 +18,7 @@
         <div id="navPlaceholder">
 
         </div>
-        <script>
-            $("#navPlaceholder").load("navbar.html");       
-        </script>
+        <?php include('navbar.php'); ?>
     
     <!--main part of the page-->
     <div class="mainPage home">
