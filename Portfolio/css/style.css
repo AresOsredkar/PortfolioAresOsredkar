@@ -179,3 +179,7 @@
     justify-content: center;
     margin:20px auto;
 }
+
+label{
+    margin:20px;
+}
