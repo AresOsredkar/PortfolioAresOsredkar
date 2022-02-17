@@ -19,15 +19,15 @@ session_start();
     </div>
     <?php include('php/navbar.php'); ?>
     <?php include('php/database.php'); ?>
-    <?php include('php/login.php'); ?>
+    <?php include('php/register.php'); ?>
 
-    <div class="mainPage loginForm">
-        <form method="post" name="signin-form" action="">
+    <div class="mainPage registerForm">
+        <form method="post" name="register-form" action="">
             <label>Username</label><input type="text" name="username" required><br><br>
             <label>Password</label><input type="password" name="password" required><br><br>
-            <button type="submit" name="login" value="login">Log IN</button>
+            <label>Email</label><input type="password" name="email"><br><br>
+            <button type="submit" name="register" value="register">REGISTER</button>
         </form>
-        <a href="Register.php" style="color:blue;text_decoration:underline;">Don't have an account yet?</a>
     </div>
 
 </div>
