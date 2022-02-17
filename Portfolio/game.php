@@ -2,51 +2,14 @@
 <html>
     <head>
         <title>Press ESC</title>
-        <meta charset="UTF-8">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/style.css">
+        <?php include('php/meta.php'); ?>
         <link rel="stylesheet" href="css/minigame.css">
-        <script src="script/script.js"></script>
         <script src="script/JSMinigame.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 <body>
 <div class="game">
-<!--navigation bar
-    <nav class="navbar navbar-expand-lg navbar-light header">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item navBut"><a href="index.html" class="nav-link" id="home">Home</a></li>
-                    <li class="nav-item dropdown navBut">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownContact" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Biography
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownContact">
-                            <li><a class="dropdown-item" href="Biography.html">General</a></li>
-                            <li><a class="dropdown-item" href="School.html">School</a></li>
-                            <li><a class="dropdown-item" href="Employment.html">Employment</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item navBut"><a href="Contact.html" class="nav-link" id="contact">Contact</a></li>
-                    <li class="nav-item dropdown navBut active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownContact" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Testing Pages
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropDownTest">
-                            <li><a class="dropdown-item" href="TestSite.html">Bootstrap Testing</a></li>
-                            <li><a class="dropdown-item" href="JSMinigame.html">JS Minigame</a></li>
-                            <li><a class="dropdown-item" href="TicTacToe.html">TicTacToe</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <a class="navbar-brand logo" href="#">Ares Osredkar</a>
-        </div>
-    </nav>
--->
+
     <span class="blob"></span>
     <div class="score">0</div>
     <a href="JSMinigame.html" class="gameEnd">GAME OVER <br>CONGRATULATIONS</a>
