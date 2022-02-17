@@ -26,6 +26,7 @@
                 if ($password == $result['passkey']) {
                     $_SESSION['user_id'] = $result['id'];
                     echo '<p class="success">Congratulations, you are logged in!</p>';
+                    header('Location:Account.php');
                 } else {
                     echo '<p class="error">Username password combination is wrong!</p>';
                 }
