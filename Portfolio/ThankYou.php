@@ -22,7 +22,7 @@ session_start();
         <div class="thankyou textSub">
                 Thank you for sending me a message, <br>
                 I will try to respond as quickly as possible.
-            <button name="back" onClick="window.location.href = 'index.html';">RETURN HOME</button>
+            <button name="back" onClick="window.location.href = 'index.php';">RETURN HOME</button>
         </div>
         <div class="contactsGeneral">
             <ul class="con">

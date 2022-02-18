@@ -21,7 +21,7 @@ session_start();
 
     <div class="mainPage contact">
         <div class="contactForm">
-            <div id="formContainer"><form name="Contact" id="form" action="ThankYou.html">
+            <div id="formContainer"><form name="Contact" id="form" action="ThankYou.php">
                 <p>Name: </p> 
                     <input id="nameInput" type="text" placeholder="John" required>
                     <br>

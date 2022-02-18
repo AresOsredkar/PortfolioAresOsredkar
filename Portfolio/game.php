@@ -15,7 +15,7 @@ session_start();
 
     <span class="blob"></span>
     <div class="score">0</div>
-    <a href="JSMinigame.html" class="gameEnd">GAME OVER <br>CONGRATULATIONS</a>
+    <a href="JSMinigame.php" class="gameEnd">GAME OVER <br>CONGRATULATIONS</a>
 </div>
 </body>
 </html>

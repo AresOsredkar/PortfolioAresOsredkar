@@ -32,7 +32,7 @@ session_start();
         </div>
         <div id="turn">Its X turn.</div>
         <br>
-        <a id="tttRestart" href="TicTacToe.html">Restart?</a>
+        <a id="tttRestart" href="TicTacToe.php">Restart?</a>
         
     </div>
 </div>

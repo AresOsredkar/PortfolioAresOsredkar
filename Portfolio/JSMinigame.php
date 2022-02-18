@@ -21,7 +21,7 @@ session_start();
     
 
     <div id="menuContainer" active="false">
-        <a href="game.html" class="start">Start Game</a>
+        <a href="game.php" class="start">Start Game</a>
         <!--routes into subpage for the fullscreen game-->
     </div>
 </div>
