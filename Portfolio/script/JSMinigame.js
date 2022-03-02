@@ -27,6 +27,7 @@ $(document).ready(function(){
         $(".score").text(score);
         return false;
     });
+
     $(document).on("keyup",function(event){
         if(event.key == "Escape"){
             window.location = "JSMinigame.html";
@@ -82,8 +83,8 @@ $(document).ready(function(){
         }
         return false;
     }
+    
     function PickUpT(){
-        var size = { w: $(".blob").width(), h: $(".blob").height()};
         if(score>0){
             score = score + -7;
         }
@@ -107,8 +108,6 @@ $(document).ready(function(){
         var eSpan = "";
         var widt = $(document).innerWidth() - 100 ;
         var heigh = $(document).innerHeight() - 100;
-        var maxH = widt - $(".game").height();
-        var maxW = heigh - $(".game").width();
         for(let i = 0; i<cnt;i++)
         {     
             eSpan = i + "' style=' top:" + Math.floor(Math.random() * heigh) + "px; left:" + Math.floor(Math.random() * widt) + "px'></span";
@@ -117,13 +116,12 @@ $(document).ready(function(){
         }
         return false; 
     }
+
     function Trap(cnt){
         var sSpan = "span class='trap'";
         var eSpan = "";
         var widt = $(document).innerWidth() - 100 ;
         var heigh = $(document).innerHeight() - 100;
-        var maxH = widt - $(".game").height();
-        var maxW = heigh - $(".game").width();
         for(let i = 0; i<cnt;i++)
         {     
             eSpan = i + "' style=' top:" + Math.floor(Math.random() * heigh) + "px; left:" + Math.floor(Math.random() * widt) + "px'></span";
@@ -132,13 +130,12 @@ $(document).ready(function(){
         }
         return false; 
     }
+
     function Death(cnt){
         var sSpan = "span class='death'";
         var eSpan = "";
         var widt = $(document).innerWidth() - 100 ;
         var heigh = $(document).innerHeight() - 100;
-        var maxH = widt - $(".game").height();
-        var maxW = heigh - $(".game").width();
         for(let i = 0; i<cnt;i++)
         {     
             eSpan = i + "' style=' top:" + Math.floor(Math.random() * heigh) + "px; left:" + Math.floor(Math.random() * widt) + "px'></span";

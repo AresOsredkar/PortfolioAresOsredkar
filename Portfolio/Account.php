@@ -19,12 +19,12 @@
         $result = $result->fetch_assoc();
         echo $result['username']; ?>
     <?php
-    if(isset($_POST['logout'])){
+     if (isset($_POST['logout'])) {
         $_SESSION['user_id'] = null;
         header('Location:login.php');
     }
     ?>
-    <button type="submit" name="logout" value="logout">LOG OUT</button>
+    <form><button type="submit" name="logout" value="logout">LOG OUT</button><form>
     
 
 </div>

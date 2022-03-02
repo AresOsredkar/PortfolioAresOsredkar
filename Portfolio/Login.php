@@ -2,7 +2,6 @@
 
 <body>
 
-
 <div class="body">
 
     <?php include('php/navbar.php'); ?>
