@@ -6,10 +6,7 @@
 <body>
 
 <div class="body">
-        <!--navigation bar-->
-        <div id="navPlaceholder">
 
-        </div>
         <?php include('php/navbar.php'); ?>
     
 
