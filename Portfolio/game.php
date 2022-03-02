@@ -1,15 +1,7 @@
-<?php
-session_start();
-?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Press ESC</title>
-        <?php include('php/meta.php'); ?>
-        <link rel="stylesheet" href="css/minigame.css">
-        <script src="script/JSMinigame.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+<?php include('php/meta.php'); ?>
+<link rel="stylesheet" href="css/minigame.css">
+<script src="script/JSMinigame.js"></script>
+
 <body>
 <div class="game">
 

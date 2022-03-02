@@ -1,13 +1,5 @@
-<?php
-session_start();
-?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Biography</title>
-        <?php include('php/meta.php'); ?>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+<?php include('php/meta.php'); ?>
+
 <body>
 
 

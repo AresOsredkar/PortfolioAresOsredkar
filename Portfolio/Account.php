@@ -1,17 +1,11 @@
+<?php include('php/meta.php'); ?>
 <?php
-    session_start();
     if(!isset($_SESSION['user_id'])){
         header('Location:login.php');
         exit;
     }
 ?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Testing Site</title>
-        <?php include('php/meta.php'); ?>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+
 <body>
 
 <div class="body">

@@ -1,15 +1,7 @@
-<?php
-session_start();
-?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Testing Site</title>
-        <?php include('php/meta.php'); ?>
-        <link rel="stylesheet" href="css/tictactoe.css">
-        <script src="script/tictactoe.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+<?php include('php/meta.php'); ?>
+<link rel="stylesheet" href="css/tictactoe.css">
+<script src="script/tictactoe.js"></script>
+
 <body>
 
 <div class="body">
