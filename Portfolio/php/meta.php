@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,4 +8,4 @@ session_start();
         <link rel="stylesheet" href="css/style.css">
         <script src="script/script.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    </head>

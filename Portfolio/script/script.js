@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
     $(".mainPage").addClass('mainOpacity');
-
     $(".galleryItem").css("opacity","0");
     $(".galleryItem").animate({opacity:1});
    

@@ -24,7 +24,9 @@
             }
             else{
                 if ($password == $result['passkey']) {
+                    session_start();
                     $_SESSION['user_id'] = $result['id'];
+                    
                     echo '<p class="success">Congratulations, you are logged in!</p>';
                     header('Location:Account.php');
                 } else {

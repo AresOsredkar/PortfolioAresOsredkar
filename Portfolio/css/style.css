@@ -22,15 +22,26 @@
     
 /*end general*/
 
-.post{
+.postCSS{
     border:2px solid black;
     border-radius: 10px;
-    width:75%;
     margin:auto 0;
-    padding: 20px;
     background-color:beige;
 }
-
+.author{
+    background-color:black;
+    color:white;
+}
+.forumContain{
+    display:flex;
+    justify-content:space-evenly;
+}
+#accountInfo{
+    width:30%;
+}
+#content{
+    width:60%;
+}
 
 /*NAVIGATION
     NavBar override formatting*/
