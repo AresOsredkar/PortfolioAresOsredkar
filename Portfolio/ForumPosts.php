@@ -26,10 +26,10 @@
         if ($res->num_rows > 0) {
             while($row = $res->fetch_assoc()) {
                 echo "<div class='post'><div class='author'>" . $row["UserID"] . "</div><div class='time'>". $row["PostDate"] ."</div><div class='content'>";
-                $file = fopen("forumPosts/" . $row["PostFile"] . ".txt", "r");
-                echo fread($file,filesize("forumPosts/" . $row["PostFile"] . ".txt"));
+                $file = fopen("forumPosts/" . $row["PostFile"], "r");
+                echo fread($file,"200");
                 fclose($file);
-                echo "</div></div>";
+                echo "</div></div><br>";
             }
           } else {
             echo "0 results";
