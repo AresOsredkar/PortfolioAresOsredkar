@@ -22,6 +22,16 @@
     
 /*end general*/
 
+.post{
+    border:2px solid black;
+    border-radius: 10px;
+    width:75%;
+    margin:auto 0;
+    padding: 20px;
+    background-color:beige;
+}
+
+
 /*NAVIGATION
     NavBar override formatting*/
     .header{
@@ -187,11 +197,4 @@ label{
 
 /*FORUM*/
 
-.post{
-    border:2px solid black;
-    border-radius: 10px;
-    width:75%;
-    margin:auto 0;
-    padding: 20px;
-    background-color:beige;
-}
+
