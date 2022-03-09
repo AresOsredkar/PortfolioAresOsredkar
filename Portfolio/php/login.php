@@ -28,7 +28,7 @@
                     $_SESSION['user_id'] = $result['id'];
                     
                     echo '<p class="success">Congratulations, you are logged in!</p>';
-                    header('Location:Account.php');
+                    header('Location:ForumPosts.php');
                 } else {
                     echo '<p class="error">Username password combination is wrong!</p>';
                 }

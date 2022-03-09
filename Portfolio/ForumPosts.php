@@ -1,31 +1,25 @@
 <?php
     session_start();
     if(!isset($_SESSION['user_id'])){
-        header('Location:login.php');
+        header('Location:Login.php');
         exit;
     }
-?>
-<?php include('php/meta.php'); ?>
-
-
+    if (isset($_POST['logout'])) {
+        unset($_SESSION['user_id']);
+        $_SESSION = array();
+        header('Location:Login.php');
+    } 
+    include('php/meta.php'); ?>
 <body>
 <?php include('php/navbar.php'); ?>
 <div class="body forumContain">
-
-    
-    <?php include('php/database.php'); ?>
-    <?php 
+<?php include('php/database.php'); 
         $id = $_SESSION['user_id'];
         $query = "SELECT * FROM Users WHERE id = $id";
         $result = mysqli_query($conn,$query);
         $result = $result->fetch_assoc();
-        echo $result['username']; 
-
-
-        
-    ?>
-    <div class="containerAc" id="content">
-        <?php
+        echo $result['username'];
+        echo "<div class='containerAc' id='content'>";
         $query = "SELECT u.username, p.UserID, p.PostDate, p.PostFile FROM Posts p JOIN Users u ON u.ID = p.UserID;";
         $conn->query("USE Portfolio;");
         $res = $conn->query($query);
@@ -39,32 +33,17 @@
             }
           } else {
             echo "0 results";
-        } 
-        ?>
-    </div>
-    <div class="containerAc" id="accountInfo">
-    <?php 
+        }
+        echo "</div>";
+        echo "<div class='containerAc' id='accountInfo'>";
         $id = $_SESSION['user_id'];
         $query = "SELECT * FROM Users WHERE id = $id";
         $result = mysqli_query($conn,$query);
         $result = $result->fetch_assoc();
         echo $result['username']; ?>
-    
-    <form><button type="submit" name="logout" value="logout">LOG OUT</button></form>
-    <?php
-     if (isset($_POST['logout'])) {
-        unset($_SESSION['user_id']);
-        $_SESSION = array();
-        session_destroy();
-        header('Location:login.php');
-    }
-    ?>
+    <form method="post"><button type="submit" name="logout" value="logout">LOG OUT</button></form>
+    <a href="post.php"><button type="submit" name="post" value="post">POST</button></a>
     </div>
-
-    
-    
-
 </div>
 </body>
 </html>
-
