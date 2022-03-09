@@ -1,17 +1,6 @@
 <?php 
-        $query = "SELECT * FROM Users;";
+        
         $conn->query("USE Portfolio;");
-        $res = $conn->query($query);
-        if ($res->num_rows > 0) {
-            while($row = $res->fetch_assoc()) {
-                echo "id: " . $row["id"]. " - Name: " . $row["username"]. " " . " - password: " .$row["passkey"]. " - email: " .$row["email"]. "<br>";
-            }
-          } else {
-            echo "0 results";
-        }     
-
-
-
         if (isset($_POST['login'])) {
             $username = $_POST['username'];
             $password = $_POST['password'];
