@@ -44,12 +44,8 @@
         echo $result['username']; ?>
     
     <form method="post"><button type="submit" name="logout" value="logout">LOG OUT</button></form>
-    <a href="post.php"><button type="submit" name="post" value="post">POST</button></a>
+    <a href="Post.php"><button type="submit" name="post" value="post">POST</button></a>
     </div>
-
-    
-    
-
 </div>
 </body>
 </html>
