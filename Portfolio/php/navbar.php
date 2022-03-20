@@ -19,10 +19,8 @@
                         Testing Pages
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropDownTest">
-                        <li><a class="dropdown-item" href="TestSite.php">Bootstrap Testing</a></li>
                         <li><a class="dropdown-item" href="JSMinigame.php">JS Minigame</a></li>
                         <li><a class="dropdown-item" href="TicTacToe.php">TicTacToe</a></li>
-                        <li><a class="dropdown-item" href="MySqlInterface.php">MYSQL</a></li>
                         <li><a class="dropdown-item" href="Login.php">Login(WIP)</a></li>
                     </ul>
                 </li>

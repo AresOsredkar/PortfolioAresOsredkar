@@ -25,7 +25,8 @@
         $res = $conn->query($query);
         if ($res->num_rows > 0) {
             while($row = $res->fetch_assoc()) {
-                echo "<div class='postCSS'><div class='author'>" . $row["username"] . "</div><div class='time'>" . $row["PostDate"] ."</div><div class='content'>" . $row["PostFile"];
+                echo "<div class='postCSS'><div class='author'>" . $row["username"] . "</div><div class='time'>" 
+                echo $row["PostDate"] . "</div><div class='content'>" . $row["PostFile"];
                 echo "</div></div><br>";
             }
           } else {
